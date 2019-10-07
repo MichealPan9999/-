@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".SwitchActivity"></activity>
+        <activity android:name=".MyAttributeActivity"></activity>
+        <activity android:name=".SwitchActivity" />
         <activity android:name=".PopupWindowActivity" />
         <activity android:name=".ADBarActivity" />
         <activity android:name=".YouKuMenuActivity" />
