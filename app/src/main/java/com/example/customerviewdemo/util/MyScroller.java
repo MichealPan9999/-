@@ -23,6 +23,7 @@ public class MyScroller {
     private long totalTime = 500;
 
     private float currX;
+    //要跳转的页数，从起始位置到结束位置滑动了多少页，总时间 = 500 * pages
 
     public void startScroll(int scrollX, int scrollY, float distanceX, int i) {
 

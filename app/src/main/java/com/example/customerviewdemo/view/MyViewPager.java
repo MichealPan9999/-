@@ -25,6 +25,8 @@ public class MyViewPager extends ViewGroup {
 
     private MyScroller scroller;
 
+    private OnPageChangeListener mOnPageChangeListener;
+
     /**
      * 实例化手势识别器
      *
@@ -114,7 +116,7 @@ public class MyViewPager extends ViewGroup {
      * 屏蔽非法值
      * @param tmpIndex
      */
-    private void scrollToPager(int tmpIndex) {
+    public void scrollToPager(int tmpIndex) {
         if(tmpIndex < 0)
         {
             tmpIndex = 0;
@@ -129,6 +131,7 @@ public class MyViewPager extends ViewGroup {
         //总距离
         float distanceX = currentIndex*getWidth() - getScrollX();
         scroller.startScroll(getScrollX(),getScrollY(),distanceX,0);
+        mOnPageChangeListener.onPageChange(currentIndex);
 
         invalidate();//调用computeScroll
 
@@ -143,5 +146,18 @@ public class MyViewPager extends ViewGroup {
             scrollTo((int) curX,0);
             invalidate();
         }
+    }
+
+    public OnPageChangeListener getmOnPageChangeListener() {
+        return mOnPageChangeListener;
+    }
+
+    public void setmOnPageChangeListener(OnPageChangeListener mOnPageChangeListener) {
+        this.mOnPageChangeListener = mOnPageChangeListener;
+    }
+
+    public interface OnPageChangeListener
+    {
+      void onPageChange(int page);
     }
 }
