@@ -13,6 +13,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private Button btn_topopupWindow;
     private Button btn_togglebutton;
     private Button btn_toMyAttribute;
+    private Button btn_toMyViewPager;
     private Intent intent;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,11 +25,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         btn_topopupWindow = findViewById(R.id.to_popupwidow);
         btn_togglebutton = findViewById(R.id.to_togglebutton);
         btn_toMyAttribute = findViewById(R.id.to_myAttribute);
+        btn_toMyViewPager = findViewById(R.id.to_myViewPager);
         btn_youkuMenu.setOnClickListener(this);
         btn_toadbar.setOnClickListener(this);
         btn_topopupWindow.setOnClickListener(this);
         btn_togglebutton.setOnClickListener(this);
         btn_toMyAttribute.setOnClickListener(this);
+        btn_toMyViewPager.setOnClickListener(this);
     }
 
     @Override
@@ -59,6 +62,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.to_myAttribute:
 
                 intent = new Intent(MainActivity.this,MyAttributeActivity.class);
+                startActivity(intent);
+                break;
+            case R.id.to_myViewPager:
+
+                intent = new Intent(MainActivity.this,MyViewpagerActivity.class);
                 startActivity(intent);
                 break;
         }
