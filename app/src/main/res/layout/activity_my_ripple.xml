@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_bg"
+    tools:context=".MyRippleActivity">
+
+    <LinearLayout
+        android:id="@+id/ll_calling"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/px60"
+        android:gravity="bottom|center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_calling_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tom"
+            android:textColor="@color/text_white"
+            android:textSize="@dimen/px60" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/px20"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="正在呼叫"
+                android:textColor="@color/text_white"
+                android:textSize="@dimen/px48" />
+
+            <TextView
+                android:id="@+id/tv_calling_name_with_points"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tom"
+                android:textColor="@color/text_white"
+                android:textSize="@dimen/px48" />
+        </LinearLayout>
+
+
+        <com.example.customerviewdemo.view.RippleImageView
+            android:id="@+id/ripview_end_calling"
+            android:layout_width="@dimen/px266"
+            android:layout_height="@dimen/px266"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/px20"
+            android:background="@color/colorTransparency"
+            android:clickable="true"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            app:imageViewBg="@drawable/calling_end"
+            app:imageViewHeigth="@dimen/px186"
+            app:imageViewWidth="@dimen/px186"
+            app:showSpacingTime="800" />
+
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

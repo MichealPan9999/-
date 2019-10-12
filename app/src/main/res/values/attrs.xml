@@ -1,8 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <declare-styleable name="MyAttributeView">
-        <attr name="my_name" format="string"/>
-        <attr name="my_age" format="integer"/>
-        <attr name="my_bg" format="reference|color"/>
+        <attr name="my_name" format="string" />
+        <attr name="my_age" format="integer" />
+        <attr name="my_bg" format="reference|color" />
+    </declare-styleable>
+    <declare-styleable name="RippleImageView">
+        <attr name="showSpacingTime" format="integer" />
+        <attr name="imageViewWidth" format="reference|dimension" />
+        <attr name="imageViewHeigth" format="reference|dimension" />
+        <attr name="imageViewBg" format="reference" />
     </declare-styleable>
 </resources>
