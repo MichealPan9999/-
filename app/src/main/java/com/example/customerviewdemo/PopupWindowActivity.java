@@ -1,6 +1,6 @@
 package com.example.customerviewdemo;
 
-import android.support.v7.app.AppCompatActivity;
+import android.app.Activity;
 import android.os.Bundle;
 import android.view.View;
 import android.view.ViewGroup;
@@ -14,12 +14,9 @@ import android.widget.TextView;
 
 import com.example.customerviewdemo.util.DensityUtil;
 
-import org.w3c.dom.Text;
-
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 
-public class PopupWindowActivity extends AppCompatActivity {
+public class PopupWindowActivity extends Activity {
 
 
     private EditText et_input;

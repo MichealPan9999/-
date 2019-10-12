@@ -1,8 +1,7 @@
 package com.example.customerviewdemo;
 
+import android.app.Activity;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
-import android.util.Log;
 import android.view.KeyEvent;
 import android.view.View;
 import android.widget.ImageView;
@@ -10,7 +9,7 @@ import android.widget.RelativeLayout;
 
 import com.example.customerviewdemo.util.Tools;
 
-public class YouKuMenuActivity extends AppCompatActivity implements View.OnClickListener {
+public class YouKuMenuActivity extends Activity implements View.OnClickListener {
 
 
     private ImageView icon_home;

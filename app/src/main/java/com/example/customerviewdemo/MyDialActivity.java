@@ -1,5 +1,6 @@
 package com.example.customerviewdemo;
 
+import android.app.Activity;
 import android.os.Bundle;
 import android.support.constraint.ConstraintLayout;
 import android.support.v7.app.AppCompatActivity;
@@ -9,7 +10,7 @@ import android.view.ViewGroup;
 
 import com.example.customerviewdemo.view.NineKeyboardView;
 
-public class MyDialActivity extends AppCompatActivity {
+public class MyDialActivity extends Activity {
 
     private NineKeyboardView nineKeyboard;
 

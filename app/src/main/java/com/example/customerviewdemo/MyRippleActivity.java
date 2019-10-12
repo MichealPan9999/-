@@ -1,15 +1,13 @@
 package com.example.customerviewdemo;
 
 import android.animation.ValueAnimator;
-import android.support.v7.app.AppCompatActivity;
+import android.app.Activity;
 import android.os.Bundle;
 import android.widget.TextView;
 
 import com.example.customerviewdemo.view.RippleImageView;
 
-import org.w3c.dom.Text;
-
-public class MyRippleActivity extends AppCompatActivity {
+public class MyRippleActivity extends Activity {
     private String[] dotText = {" . ", " . . ", " . . ."};
     private ValueAnimator valueAnimator;
     /**

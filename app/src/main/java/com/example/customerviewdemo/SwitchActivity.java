@@ -1,9 +1,9 @@
 package com.example.customerviewdemo;
 
-import android.support.v7.app.AppCompatActivity;
+import android.app.Activity;
 import android.os.Bundle;
 
-public class SwitchActivity extends AppCompatActivity {
+public class SwitchActivity extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
