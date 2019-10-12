@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_bg"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/px304"
+        android:layout_marginTop="@dimen/px100"
+        android:layout_marginRight="@dimen/px136"
+        android:layout_weight="1">
+
+        <include
+            android:id="@+id/keyboard_group"
+            layout="@layout/nine_keyboard" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="@dimen/px1"
+        android:layout_height="match_parent"
+        android:background="@drawable/line_partition_1_700" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center">
+
+        <LinearLayout
+            android:id="@+id/ll_no_dial_record"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/px200"
+                android:layout_height="@dimen/px164"
+                android:background="@drawable/dial_no_record" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/px50"
+                android:textColor="@color/text_white"
+                android:text="暂无通话记录"
+                android:textSize="@dimen/px36" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

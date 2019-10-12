@@ -1,0 +1,12 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/nineKeybordButton"
+    style="@style/NineKeybordButton"
+    android:gravity="center">
+
+
+    <TextView
+        android:id="@+id/nineKeybordButtonTextView1"
+        style="@style/NineKeybordButtonText"
+        android:visibility="visible" />
+
+</LinearLayout>
