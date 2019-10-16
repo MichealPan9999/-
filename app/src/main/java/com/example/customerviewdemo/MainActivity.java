@@ -16,6 +16,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
     private Button btn_toMyViewPager;
     private Button btn_toMyDialView;
     private Button btn_toMyRippleView;
+    private Button btn_toMyContactsView;
     private Intent intent;
 
     @Override
@@ -31,6 +32,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
         btn_toMyViewPager = findViewById(R.id.to_myViewPager);
         btn_toMyDialView = findViewById(R.id.to_myDialView);
         btn_toMyRippleView = findViewById(R.id.to_myRippleView);
+        btn_toMyContactsView = findViewById(R.id.to_myContactsView);
         btn_youkuMenu.setOnClickListener(this);
         btn_toadbar.setOnClickListener(this);
         btn_topopupWindow.setOnClickListener(this);
@@ -39,6 +41,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
         btn_toMyDialView.setOnClickListener(this);
         btn_toMyViewPager.setOnClickListener(this);
         btn_toMyRippleView.setOnClickListener(this);
+        btn_toMyContactsView.setOnClickListener(this);
     }
 
     @Override
@@ -83,6 +86,11 @@ public class MainActivity extends Activity implements View.OnClickListener {
             case R.id.to_myRippleView:
 
                 intent = new Intent(MainActivity.this, MyRippleActivity.class);
+                startActivity(intent);
+                break;
+            case R.id.to_myContactsView:
+
+                intent = new Intent(MainActivity.this, MyContactsActivity.class);
                 startActivity(intent);
                 break;
         }
